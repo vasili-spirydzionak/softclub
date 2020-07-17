@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="GmailTestSuite" verbose="1" >
+    <listeners>
+        <listener class-name="com.softclub.report.CustomTestListener" />
+    </listeners>
+
+    <test name="EmailTest" >
+        <classes>
+            <class name="com.softclub.test.SignInTest"/>
+            <class name="com.softclub.test.EmailTest"/>
+            <class name="com.softclub.test.SignOutTest"/>
+        </classes>
+    </test>
+</suite>
